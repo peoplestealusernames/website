@@ -4,7 +4,8 @@ import { Link } from "react-router-dom"
 const items = [
     { path: '/', label: 'Main' },
     { path: '/work', label: 'Work' },
-    { path: '/contact', label: 'Contact' }
+    { path: '/contact', label: 'Contact' },
+    { path: '/experience', label: 'Experience' }
 ]
 
 export function Navigation() {
