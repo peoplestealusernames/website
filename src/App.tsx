@@ -30,6 +30,9 @@ function App() {
           <Route path="/experience" element={
             <ExperiencePage />
           } />
+          <Route path="/projects/db" element={
+            <DBPage />
+          } />
           <Route path="/projects/RGB" element={
             <RGBPage />
           } />
