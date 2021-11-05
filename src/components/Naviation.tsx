@@ -1,3 +1,4 @@
+import { Tab, Tabs } from "@mui/material"
 import { Link } from "react-router-dom"
 
 const items = [
@@ -9,18 +10,20 @@ const items = [
 
 export function Navigation() {
     return (
-        <div className="Navigation-Bar">
-            <ul>
-                {items.map(item => {
-                    return (
-                        <li key={item.path} >
-                            <Link to={item.path} >
-                                {item.label}
-                            </Link>
-                        </li>
-                    )
-                })}
-            </ul >
-        </div >
+        <Tabs centered sx={{
+            p: 1,
+            display: "flex",
+            textAlign: "center", verticalAlign: "top"
+        }}>
+            {items.map(item => {
+                return (
+                    <Tab component={Link} label={item.label} to={item.path}
+                        sx={{
+                            verticalAlign: "middle", textAlign: "center"
+                        }}
+                    ></Tab>
+                )
+            })}
+        </Tabs>
     )
 }
