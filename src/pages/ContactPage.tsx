@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Grid, Typography } from "@mui/material";
+import { Box, Card, CardContent, Grid, Link, Typography } from "@mui/material";
 
 export function ContactPage() {
     return (<Grid container spacing={2}
@@ -30,9 +30,9 @@ export function ContactPage() {
                     <Typography>
                         bhogan@litigationlogisticsinc.com
                     </Typography>
-                    <Typography>
-                        https://github.com/peoplestealusernames/
-                    </Typography>
+                    <Link href="https://github.com/peoplestealusernames/" underline='hover'>
+                        GitHub
+                    </Link>
                 </CardContent>
             </Card>
             <Card sx={{ maxWidth: 345 }}>
