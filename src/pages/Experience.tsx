@@ -24,17 +24,17 @@ export function ExperiencePage() {
             <Typography>
                 This website
             </Typography>
-            <Link href="/projects/RGB" underline='hover'>
+            <Link href="website/projects/RGB" underline='hover'>
                 <Typography>
                     Project: RGB
                 </Typography>
             </Link>
-            <Link href="/projects/db" underline='hover'>
+            <Link href="website/projects/db" underline='hover'>
                 <Typography>
                     Homebrew database
                 </Typography>
             </Link>
-            <Link href="/projects/psudo" underline='hover'>
+            <Link href="website/projects/psudo" underline='hover'>
                 <Typography>
                     Psudo project
                 </Typography>

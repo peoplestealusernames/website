@@ -100,7 +100,7 @@ export function DBPage() {
                         GIT: Ardunio:RGB
                     </Typography>
                 </Link>
-                <Link href="/projects/RGB" underline='hover'>
+                <Link href="website/projects/RGB" underline='hover'>
                     <Typography>
                         Project: RGB
                     </Typography>
