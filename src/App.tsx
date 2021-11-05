@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Navigation } from './components/Naviation';
 import { MainPage } from './pages/MainPage';
 import { ContactPage } from './pages/ContactPage';
+import { ProjectPage } from './pages/Projects';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
             <ContactPage />
           } />
           <Route path="/projects" element={
-            <ContactPage />
+            <ProjectPage />
           } />
         </Routes>
       </BrowserRouter>

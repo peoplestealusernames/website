@@ -1,9 +1,9 @@
 import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, Paper, Typography } from "@mui/material";
 import { Fragment } from "react";
 
-export function WorkPage() {
+export function ProjectPage() {
     return (
-        <div className="WorkPage">
+        <div className="ProjectPage">
             <Grid container spacing={2}>
                 <Box
                     sx={{
