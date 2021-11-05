@@ -14,9 +14,9 @@ export function ProjectPage() {
             p: 2
         }}
     >
-        <Card sx={{ p: 1, m: 1, maxWidth: 300 }}>
+        <Card sx={{ p: 1, m: 1, maxWidth: 250 }}>
             <CardContent>
-                <Link href="website/projects/RGB" underline='hover'>
+                <Link href="/website/projects/RGB" underline='hover'>
                     <Typography>
                         RGB
                     </Typography>
@@ -27,9 +27,9 @@ export function ProjectPage() {
                 </Typography>
             </CardContent>
         </Card>
-        <Card sx={{ p: 1, m: 1, maxWidth: 500 }}>
+        <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
             <CardContent>
-                <Link href="website/projects/db" underline='hover'>
+                <Link href="/website/projects/db" underline='hover'>
                     <Typography>
                         Homebrew database
                     </Typography>
@@ -39,15 +39,15 @@ export function ProjectPage() {
                 </Typography>
             </CardContent>
         </Card>
-        <Card sx={{ p: 1, m: 1, maxWidth: 500 }}>
+        <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
             <CardContent>
-                <Link href="website/projects/psudo" underline='hover'>
+                <Link href="/website/projects/psudo" underline='hover'>
                     <Typography>
                         Psudo project
                     </Typography>
                 </Link>
                 <Typography>
-                    A string of api's for future use as part of smarthome project
+                    A group of APIs for future use as part of smarthome project
                 </Typography>
             </CardContent>
         </Card>
