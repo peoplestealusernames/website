@@ -18,22 +18,22 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/" element={
+          <Route path="website/" element={
             <MainPage />
           } />
-          <Route path="/contact" element={
+          <Route path="website/contact" element={
             <ContactPage />
           } />
-          <Route path="/projects" element={
+          <Route path="website/projects" element={
             <ProjectPage />
           } />
-          <Route path="/experience" element={
+          <Route path="website/experience" element={
             <ExperiencePage />
           } />
-          <Route path="/projects/db" element={
+          <Route path="website/projects/db" element={
             <DBPage />
           } />
-          <Route path="/projects/RGB" element={
+          <Route path="website/projects/RGB" element={
             <RGBPage />
           } />
         </Routes>
