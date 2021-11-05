@@ -6,6 +6,7 @@ import { } from 'react-router'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Navigation } from './components/Naviation';
 import { MainPage } from './pages/MainPage';
+import { ContactPage } from './pages/ContactPage';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
           <Route path="/" element={
             <MainPage />
           } />
-          <Route path="/about" element={
-            <div>
-              about
-            </div>
+          <Route path="/contact" element={
+            <ContactPage />
+          } />
+          <Route path="/projects" element={
+            <ContactPage />
           } />
         </Routes>
       </BrowserRouter>
