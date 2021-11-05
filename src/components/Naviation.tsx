@@ -3,24 +3,28 @@ import { Link } from "react-router-dom"
 
 const items = [
     { path: '/website/', label: 'Home' },
-    { path: '/website/work', label: 'Work' },
+    { path: '/website/skills', label: 'Skills' },
+    { path: '/website/projects', label: 'Projects' },
     { path: '/website/contact', label: 'Contact' },
-    { path: '/website/experience', label: 'Experience' },
-    { path: '/website/projects', label: 'Projects' }
 ]
 
 export function Navigation() {
     return (
-        <Tabs centered sx={{
-            p: 1,
-            display: "flex",
-            textAlign: "center", verticalAlign: "top"
-        }}>
+        <Tabs
+            scrollButtons="auto"
+            centered sx={{
+                p: 0.5,
+                display: "flex",
+                margin: "auto",
+                textAlign: "center", verticalAlign: "top"
+            }}>
             {items.map(item => {
                 return (
                     <Tab component={Link} label={item.label} to={item.path}
                         sx={{
-                            verticalAlign: "middle", textAlign: "center", fontSize: 20
+                            p: 0,
+                            m: 0,
+                            verticalAlign: "middle", textAlign: "center"
                         }}
                     ></Tab>
                 )

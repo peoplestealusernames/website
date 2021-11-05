@@ -27,7 +27,7 @@ function App() {
           <Route path="website/projects" element={
             <ProjectPage />
           } />
-          <Route path="website/experience" element={
+          <Route path="website/skills" element={
             <ExperiencePage />
           } />
           <Route path="website/projects/db" element={
