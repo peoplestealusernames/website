@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Navigation } from './components/Naviation';
 import { MainPage } from './pages/MainPage';
 import { ExperiencePage } from './pages/Experience';
-import { ProjectPage } from './pages/Projects';
+import { ProjectPage } from './pages/ProjectPage';
 import { ContactPage } from './pages/ContactPage';
 import { DBPage } from './pages/Projects/DBPage';
 import { RGBPage } from './pages/Projects/RGBPage';
