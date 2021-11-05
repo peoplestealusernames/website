@@ -1,5 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Grid, Link, Tab, Typography } from "@mui/material";
-import { Link as RouteLink } from "react-router-dom"
+import { Card, CardContent, Grid, Link, Typography } from "@mui/material";
 
 const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
@@ -11,19 +10,22 @@ export function ProjectPage() {
         margin="auto"
         sm={10}
         sx={{
-            justifyContent: "center", alignItems: "center", textAlign: "center",
+            justifyContent: "center", alignItems: "up", textAlign: "center",
             p: 2
         }}
     >
-        <Card sx={{ p: 1, m: 1, maxWidth: 500 }}>
-            <Typography>
-                A
-            </Typography>
-            <Link href="website/projects/RGB" underline='hover'>
+        <Card sx={{ p: 1, m: 1, maxWidth: 300 }}>
+            <CardContent>
+                <Link href="website/projects/RGB" underline='hover'>
+                    <Typography>
+                        RGB
+                    </Typography>
+                </Link>
                 <Typography>
-                    Project: RGB
+                    A mini story about learning electrical from scratch.
+                    While connecting a RGB strip to the internet.
                 </Typography>
-            </Link>
+            </CardContent>
         </Card>
         <Card sx={{ p: 1, m: 1, maxWidth: 500 }}>
             <CardContent>
@@ -32,6 +34,9 @@ export function ProjectPage() {
                         Homebrew database
                     </Typography>
                 </Link>
+                <Typography>
+                    A selfmade database system using TCP sockets
+                </Typography>
             </CardContent>
         </Card>
         <Card sx={{ p: 1, m: 1, maxWidth: 500 }}>
@@ -41,6 +46,9 @@ export function ProjectPage() {
                         Psudo project
                     </Typography>
                 </Link>
+                <Typography>
+                    A string of api's for future use as part of smarthome project
+                </Typography>
             </CardContent>
         </Card>
     </Grid >
