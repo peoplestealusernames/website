@@ -9,7 +9,7 @@ import { MainPage } from './pages/MainPage';
 import { ExperiencePage } from './pages/Experience';
 import { ProjectPage } from './pages/Projects';
 import { ContactPage } from './pages/ContactPage';
-import { DBPage } from './pages/DBPage';
+import { DBPage } from './pages/Projects/DBPage';
 
 function App() {
   return (
