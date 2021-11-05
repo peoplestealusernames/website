@@ -1,7 +1,6 @@
-import { Card, CardContent, CardMedia, Grid, Link, Tab, Typography } from "@mui/material";
-import { Link as RouteLink } from "react-router-dom"
+import { Card, Grid, Typography } from "@mui/material";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
+const Photos = "https:/ / github.com / peoplestealusernames / website / blob / master / public / Photos"
 
 export function RGBPage() {
     return (<Grid container
