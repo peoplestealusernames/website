@@ -1,8 +1,10 @@
-import { Box, Card, CardContent, Grid, Link, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
+
+const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
 export function ContactPage() {
-    return (<Grid container spacing={2}
-        direction="row"
+    return (<Grid spacing={2}
+        direction="column"
         justifyContent="center"
         alignItems="center"
         margin="auto"
@@ -53,6 +55,16 @@ export function ContactPage() {
                 </CardContent>
             </Card>
         </Box>
+        <Card sx={{ m: 1, maxWidth: 500 }}>
+            <CardContent>
+                <CardMedia sx={{ maxHeight: 300 }}
+                    component="img"
+                    title="PIC"
+                    src={Photos + "/website.png?raw=true"}
+                    alt="RGB+Screen+APP"
+                />
+            </CardContent>
+        </Card>
     </Grid >
     )
 }

@@ -37,7 +37,7 @@ export function DBPage() {
                 It was also a latency issue where even with a simple RGB light a noticable lag was pressent.
             </Typography>
         </Card>
-        <Grid sx={{ p: 2 }} container spacing={3}
+        <Grid sx={{ p: 2 }} spacing={3}
             direction="row"
             justifyContent="center"
             alignItems="top"

@@ -3,7 +3,7 @@ import { Card, Grid, Typography } from "@mui/material";
 const Photos = "https:/ / github.com / peoplestealusernames / website / blob / master / public / Photos"
 
 export function RGBPage() {
-    return (<Grid container
+    return (<Grid
         spacing={1}
         justifyContent="center"
         alignItems="center"

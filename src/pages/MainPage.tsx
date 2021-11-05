@@ -15,7 +15,7 @@ const BegImage = [
 export function MainPage() {
     return (
         <div className="MainPage">
-            <Grid container spacing={2}
+            <Grid spacing={2}
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
@@ -68,7 +68,7 @@ export function MainPage() {
                 </Box>
             </Grid>
 
-            <Grid container spacing={2}
+            <Grid spacing={2}
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
