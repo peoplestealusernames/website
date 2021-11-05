@@ -31,7 +31,14 @@ export function ContactPage() {
                         bhogan@litigationlogisticsinc.com
                     </Typography>
                     <Link href="https://github.com/peoplestealusernames/" underline='hover'>
-                        GitHub
+                        <Typography>
+                            Github
+                        </Typography>
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/brett-hogan-b2052321b/" underline='hover'>
+                        <Typography>
+                            LinkedIn
+                        </Typography>
                     </Link>
                 </CardContent>
             </Card>
