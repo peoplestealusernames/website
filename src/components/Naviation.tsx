@@ -5,7 +5,8 @@ const items = [
     { path: '/website/', label: 'Home' },
     { path: '/website/work', label: 'Work' },
     { path: '/website/contact', label: 'Contact' },
-    { path: '/website/experience', label: 'Experience' }
+    { path: '/website/experience', label: 'Experience' },
+    { path: '/website/projects', label: 'Projects' }
 ]
 
 export function Navigation() {
