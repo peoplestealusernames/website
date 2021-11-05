@@ -1,4 +1,4 @@
-import { Tab, Tabs } from "@mui/material"
+import { Tab, Tabs, Card, CardContent } from "@mui/material"
 import { Link } from "react-router-dom"
 
 const items = [
@@ -10,25 +10,31 @@ const items = [
 
 export function Navigation() {
     return (
-        <Tabs
-            scrollButtons="auto"
-            centered sx={{
-                p: 0.5,
-                display: "flex",
-                margin: "auto",
+        <Card
+            sx={{
                 textAlign: "center", verticalAlign: "top"
             }}>
-            {items.map(item => {
-                return (
-                    <Tab component={Link} label={item.label} to={item.path}
-                        sx={{
-                            p: 0,
-                            m: 0,
-                            verticalAlign: "middle", textAlign: "center"
-                        }}
-                    ></Tab>
-                )
-            })}
-        </Tabs>
+            <CardContent>
+                <Tabs
+                    centered sx={{
+                        display: "flex",
+                        justifyContent: "center", alignItems: "up",
+                        margin: "auto",
+                        textAlign: "center", verticalAlign: "top"
+                    }}>
+                    {items.map(item => {
+                        return (
+                            <Tab component={Link} label={item.label} to={item.path}
+                                sx={{
+                                    p: 0,
+                                    m: 0,
+                                    verticalAlign: "middle", textAlign: "center"
+                                }}
+                            ></Tab>
+                        )
+                    })}
+                </Tabs>
+            </CardContent>
+        </Card>
     )
 }
