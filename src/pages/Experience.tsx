@@ -1,7 +1,10 @@
-import { Box, Card, CardContent, Grid, Link, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Grid, Link, Tab, Typography } from "@mui/material";
+import { Link as RouteLink } from "react-router-dom"
+
+const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
 export function ExperiencePage() {
-    return (<Grid container spacing={2}
+    return (<Grid container spacing={3}
         direction="row"
         justifyContent="center"
         alignItems="center"
@@ -11,41 +14,34 @@ export function ExperiencePage() {
             p: 2,
         }}
     >
-        <Box
-            justifyContent="center"
-            alignItems="center"
-            sx={{
-                p: 3,
-                background: "red",
-                display: 'grid',
-                gridTemplateColumns: { md: '1fr 1fr' },
-                gap: 5,
-            }}
-        >
-            <Card sx={{ maxWidth: 500 }}>
-                <CardContent>
-                    <Typography>
-                        (931)-922-6045
-                    </Typography>
-                    <Typography>
-                        bhogan@litigationlogisticsinc.com
-                    </Typography>
-                    <Link href="https://github.com/peoplestealusernames/" underline='hover'>
-                        GitHub
-                    </Link>
-                </CardContent>
-            </Card>
-            <Card sx={{ maxWidth: 345 }}>
-                <CardContent>
-                    <Typography>
-                        Contact me!
-                    </Typography>
-                    <Typography>
-                        Feel free to reachout at anytime with any questions, comments, or concerns.
-                    </Typography>
-                </CardContent>
-            </Card>
-        </Box>
+        <Card sx={{ maxWidth: 500 }}>
+            <Typography sx={{
+                p: 1, fontSize: 40,
+                justifyContent: "center", alignItems: "center", textAlign: "center"
+            }}>
+                NodeJS & Typescript
+            </Typography>
+            <Typography>
+                This website
+            </Typography>
+            <Tab component={RouteLink} to="/projects/db"
+                label="Homebrew database"
+                sx={{ color: "#0645AD" }}
+            ></Tab>
+        </Card>
+        <Card sx={{ maxWidth: 500 }}>
+            <CardContent>
+                <CardMedia
+                    component="img"
+                    title="PIC"
+                    src={Photos + "/Projects/Arm.jpg?raw=true"}
+                    alt="Head"
+                />
+                <Typography>
+                    (931)-922-6045
+                </Typography>
+            </CardContent>
+        </Card>
     </Grid >
     )
 }
