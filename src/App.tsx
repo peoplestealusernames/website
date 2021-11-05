@@ -10,6 +10,7 @@ import { ExperiencePage } from './pages/Experience';
 import { ProjectPage } from './pages/Projects';
 import { ContactPage } from './pages/ContactPage';
 import { DBPage } from './pages/Projects/DBPage';
+import { RGBPage } from './pages/Projects/RGBPage';
 
 function App() {
   return (
@@ -29,8 +30,8 @@ function App() {
           <Route path="/experience" element={
             <ExperiencePage />
           } />
-          <Route path="/projects/db" element={
-            <DBPage />
+          <Route path="/projects/RGB" element={
+            <RGBPage />
           } />
         </Routes>
       </BrowserRouter>
