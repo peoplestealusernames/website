@@ -3,11 +3,11 @@ import { Fragment } from "react";
 
 const BegImage = [
     {
-        img: 'Photos/Begin/scratch.png',
+        img: 'https://github.com/peoplestealusernames/website/blob/master/public/Photos/Begin/scratch.png?raw=true',
         title: 'scratch',
     },
     {
-        img: 'Photos/Begin/legoRobotic.png',
+        img: 'https://github.com/peoplestealusernames/website/blob/master/public/Photos/Begin/legoRobotic.png?raw=true',
         title: 'LEGORobotic',
     },
 ]
@@ -37,38 +37,36 @@ export function MainPage() {
                     }}
                 >
                     <Card sx={{ maxWidth: 500 }}>
-                        <CardActionArea>
-                            <CardMedia
-                                component="img"
-                                image="/Photos/Head.jpg"
-                                alt="Head"
-                            />
-                        </CardActionArea>
+                        <CardMedia
+                            component="img"
+                            style={{ height: "250px", paddingTop: "2%" }}
+                            title="PIC"
+                            src={"https://github.com/peoplestealusernames/website/blob/master/public/Photos/Head.jpg?raw=true"}
+                            alt="Head"
+                        />
                     </Card>
                     <Card sx={{ maxWidth: 345 }}>
-                        <CardActionArea>
-                            <CardContent>
-                                <Typography sx={{
-                                    p: 1, fontSize: 35,
-                                    justifyContent: "center", alignItems: "center", textAlign: "center"
-                                }}>
-                                    About me
-                                </Typography>
-                                <Typography sx={{
-                                    p: .5, fontSize: 20,
-                                    justifyContent: "left", alignItems: "left", textAlign: "left"
-                                }}>
-                                    Hello, I'm Brett Hogan!
-                                </Typography>
-                                <Typography sx={{
-                                    p: 1,
-                                    justifyContent: "left", alignItems: "left", textAlign: "left"
-                                }}>
-                                    I'm currently a freshman at MTSU studying Mechatronics Engineering.
-                                    I was born in Lake Geneva, WI
-                                </Typography>
-                            </CardContent>
-                        </CardActionArea>
+                        <CardContent>
+                            <Typography sx={{
+                                p: 1, fontSize: 35,
+                                justifyContent: "center", alignItems: "center", textAlign: "center"
+                            }}>
+                                About me
+                            </Typography>
+                            <Typography sx={{
+                                p: .5, fontSize: 20,
+                                justifyContent: "left", alignItems: "left", textAlign: "left"
+                            }}>
+                                Hello, I'm Brett Hogan!
+                            </Typography>
+                            <Typography sx={{
+                                p: 1,
+                                justifyContent: "left", alignItems: "left", textAlign: "left"
+                            }}>
+                                I'm currently a freshman at MTSU studying Mechatronics Engineering.
+                                I was born in Lake Geneva, WI
+                            </Typography>
+                        </CardContent>
                     </Card>
                 </Box>
             </Grid>
@@ -88,29 +86,29 @@ export function MainPage() {
                     }}
                 >
                     <Card sx={{ maxWidth: 500 }}>
-                        <CardActionArea>
-                            <Grid container spacing={2}
-                                direction="row"
-                                justifyContent="center"
-                                alignItems="center"
-                            >
-                                <ImageList sx={{ p: 3, width: 250, height: 250 }} cols={1} rowHeight={70}>
-                                    {BegImage.map((item) => (
-                                        <ImageListItem key={item.img}>
-                                            <img
-                                                src={`${item.img}?w=200&h=80&fit=crop&auto=format`}
-                                                srcSet={`${item.img}?w=200&h=80&fit=crop&auto=format&dpr=2 2x`}
-                                                alt={item.title}
-                                                loading="lazy"
-                                            />
-                                        </ImageListItem>
-                                    ))}
-                                </ImageList>
-                                <Typography>
 
-                                </Typography>
-                            </Grid>
-                        </CardActionArea>
+                        <Grid container spacing={2}
+                            direction="row"
+                            justifyContent="center"
+                            alignItems="center"
+                        >
+                            <ImageList sx={{ p: 3, width: 250, height: 250 }} cols={1} rowHeight={70}>
+                                {BegImage.map((item) => (
+                                    <ImageListItem key={item.img}>
+                                        <img
+                                            src={`${item.img}?w=200&h=80&fit=crop&auto=format`}
+                                            srcSet={`${item.img}?w=200&h=80&fit=crop&auto=format&dpr=2 2x`}
+                                            alt={item.title}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                ))}
+                            </ImageList>
+                            <Typography>
+                                My
+                            </Typography>
+                        </Grid>
+
                     </Card>
                 </Box>
             </Grid>
