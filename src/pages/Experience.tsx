@@ -14,7 +14,7 @@ export function ExperiencePage() {
             p: 2,
         }}
     >
-        <Card sx={{ maxWidth: 500 }}>
+        <Card sx={{ p: 1, m: 1, maxWidth: 500 }}>
             <Typography sx={{
                 p: 1, fontSize: 40,
                 justifyContent: "center", alignItems: "center", textAlign: "center"
@@ -24,10 +24,21 @@ export function ExperiencePage() {
             <Typography>
                 This website
             </Typography>
-            <Tab component={RouteLink} to="/projects/db"
-                label="Homebrew database"
-                sx={{ color: "#0645AD" }}
-            ></Tab>
+            <Link href="/projects/RGB" underline='hover'>
+                <Typography>
+                    Project: RGB
+                </Typography>
+            </Link>
+            <Link href="/projects/db" underline='hover'>
+                <Typography>
+                    Homebrew database
+                </Typography>
+            </Link>
+            <Link href="/projects/psudo" underline='hover'>
+                <Typography>
+                    Psudo project
+                </Typography>
+            </Link>
         </Card>
         <Card sx={{ maxWidth: 500 }}>
             <CardContent>

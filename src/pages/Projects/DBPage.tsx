@@ -100,10 +100,11 @@ export function DBPage() {
                         GIT: Ardunio:RGB
                     </Typography>
                 </Link>
-                <Tab component={RouteLink} to="/projects/RGB"
-                    label="RGB"
-                    sx={{ color: "#0645AD" }}
-                ></Tab>
+                <Link href="/projects/RGB" underline='hover'>
+                    <Typography>
+                        Project: RGB
+                    </Typography>
+                </Link>
             </Card>
             <Card sx={{ m: 1, p: 1, maxWidth: 250, textAlign: "left" }}>
                 <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
