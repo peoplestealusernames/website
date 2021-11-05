@@ -3,7 +3,7 @@ import { Card, CardContent, Grid, Link, Typography } from "@mui/material";
 const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
 export function ProjectPage() {
-    return (<Grid spacing={3}
+    return (<Grid container spacing={3}
         direction="row"
         justifyContent="center"
         alignItems="center"

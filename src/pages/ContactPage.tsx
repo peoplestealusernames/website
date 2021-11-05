@@ -3,7 +3,7 @@ import { Box, Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/
 const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
 export function ContactPage() {
-    return (<Grid spacing={2}
+    return (<Grid container spacing={2}
         direction="column"
         justifyContent="center"
         alignItems="center"
@@ -55,9 +55,9 @@ export function ContactPage() {
                 </CardContent>
             </Card>
         </Box>
-        <Card sx={{ m: 1, maxWidth: 500 }}>
+        <Card sx={{ m: 1, maxWidth: 250, maxHeight: 250 }}>
             <CardContent>
-                <CardMedia sx={{ maxHeight: 300 }}
+                <CardMedia sx={{ maxWidth: 250, maxHeight: 250 }}
                     component="img"
                     title="PIC"
                     src={Photos + "/website.png?raw=true"}

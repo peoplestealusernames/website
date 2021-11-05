@@ -15,7 +15,7 @@ const BegImage = [
 export function MainPage() {
     return (
         <div className="MainPage">
-            <Grid spacing={2}
+            <Grid container spacing={2}
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
@@ -37,11 +37,13 @@ export function MainPage() {
                     }}
                 >
                     <Card sx={{ maxWidth: 500 }}>
-                        <CardMedia
-                            component="img"
-                            src={"https://github.com/peoplestealusernames/website/blob/master/public/Photos/Head.jpg?raw=true"}
-                            alt="Head"
-                        />
+                        <CardContent>
+                            <CardMedia
+                                component="img"
+                                src={"https://github.com/peoplestealusernames/website/blob/master/public/Photos/Head.jpg?raw=true"}
+                                alt="Head"
+                            />
+                        </CardContent>
                     </Card>
                     <Card sx={{ maxWidth: 345 }}>
                         <CardContent>
@@ -68,7 +70,7 @@ export function MainPage() {
                 </Box>
             </Grid>
 
-            <Grid spacing={2}
+            <Grid container spacing={2}
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
