@@ -6,8 +6,9 @@ import { } from 'react-router'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import { Navigation } from './components/Naviation';
 import { MainPage } from './pages/MainPage';
-import { ContactPage } from './pages/ContactPage';
+import { ExperiencePage } from './pages/Experience';
 import { ProjectPage } from './pages/Projects';
+import { ContactPage } from './pages/ContactPage';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           } />
           <Route path="/projects" element={
             <ProjectPage />
+          } />
+          <Route path="/experience" element={
+            <ExperiencePage />
           } />
         </Routes>
       </BrowserRouter>
