@@ -39,8 +39,6 @@ export function MainPage() {
                     <Card sx={{ maxWidth: 500 }}>
                         <CardMedia
                             component="img"
-                            style={{ height: "250px", paddingTop: "2%" }}
-                            title="PIC"
                             src={"https://github.com/peoplestealusernames/website/blob/master/public/Photos/Head.jpg?raw=true"}
                             alt="Head"
                         />
