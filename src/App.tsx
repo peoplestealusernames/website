@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import { } from 'react-router'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Navigation } from './components/Naviation';
 import { MainPage } from './pages/MainPage';
 import { ExperiencePage } from './pages/Experience';
@@ -12,33 +12,32 @@ import { ContactPage } from './pages/ContactPage';
 import { DBPage } from './pages/Projects/DBPage';
 import { RGBPage } from './pages/Projects/RGBPage';
 
+//TODO click on images to enlarge them
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Navigation />
-        <Routes>
-          <Route path="website/" element={
-            <MainPage />
-          } />
-          <Route path="website/contact" element={
-            <ContactPage />
-          } />
-          <Route path="website/projects" element={
-            <ProjectPage />
-          } />
-          <Route path="website/skills" element={
-            <ExperiencePage />
-          } />
-          <Route path="website/projects/db" element={
-            <DBPage />
-          } />
-          <Route path="website/projects/RGB" element={
-            <RGBPage />
-          } />
-        </Routes>
-      </BrowserRouter>
-    </div >
+    <BrowserRouter>
+      <Navigation />
+      <Routes>
+        <Route path="website/" element={
+          <MainPage />
+        } />
+        <Route path="website/contact" element={
+          <ContactPage />
+        } />
+        <Route path="website/projects" element={
+          <ProjectPage />
+        } />
+        <Route path="website/skills" element={
+          <ExperiencePage />
+        } />
+        <Route path="website/projects/db" element={
+          <DBPage />
+        } />
+        <Route path="website/projects/RGB" element={
+          <RGBPage />
+        } />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
