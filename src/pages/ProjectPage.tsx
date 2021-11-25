@@ -1,7 +1,9 @@
 import { Card, CardContent, Grid, Link, Typography } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
+//TODO: add alot of cad projects from ied and poe 
 export function ProjectPage() {
     return (<Grid container spacing={3}
         direction="row"
@@ -16,7 +18,7 @@ export function ProjectPage() {
     >
         <Card sx={{ p: 1, m: 1, maxWidth: 250 }}>
             <CardContent>
-                <Link href="/website/projects/RGB" underline='hover'>
+                <Link component={RouterLink} to="/website/projects/RGB" underline='hover'>
                     <Typography>
                         RGB
                     </Typography>
@@ -29,7 +31,7 @@ export function ProjectPage() {
         </Card>
         <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
             <CardContent>
-                <Link href="/website/projects/db" underline='hover'>
+                <Link component={RouterLink} to="/website/projects/db" underline='hover'>
                     <Typography>
                         Homebrew database
                     </Typography>
@@ -41,7 +43,7 @@ export function ProjectPage() {
         </Card>
         <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
             <CardContent>
-                <Link href="/website/projects/psudo" underline='hover'>
+                <Link component={RouterLink} to="/website/projects/psudo" underline='hover'>
                     <Typography>
                         Psudo project
                     </Typography>

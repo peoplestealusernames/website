@@ -1,4 +1,5 @@
 import { Box, Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
 
@@ -32,12 +33,12 @@ export function ContactPage() {
                     <Typography>
                         bhogan@litigationlogisticsinc.com
                     </Typography>
-                    <Link href="https://github.com/peoplestealusernames/" underline='hover'>
+                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/" underline='hover'>
                         <Typography>
                             Github
                         </Typography>
                     </Link>
-                    <Link href="https://www.linkedin.com/in/brett-hogan-b2052321b/" underline='hover'>
+                    <Link component={RouterLink} to="https://www.linkedin.com/in/brett-hogan-b2052321b/" underline='hover'>
                         <Typography>
                             LinkedIn
                         </Typography>
