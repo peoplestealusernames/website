@@ -1,5 +1,5 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Grid, ImageList, ImageListItem, Paper, Typography } from "@mui/material";
-import { Fragment } from "react";
+import { Box, Card, CardContent, CardMedia, Grid, Typography, Link } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 const BegImage = [
     {
@@ -64,11 +64,35 @@ export function MainPage() {
                                 justifyContent: "left", alignItems: "left", textAlign: "left"
                             }}>
                                 I'm currently a freshman at MTSU studying Mechatronics Engineering.
+                                With multiple years of engineering experience.
                             </Typography>
                         </CardContent>
                     </Card>
                 </Box>
             </Grid>
+
+            <Grid container spacing={2}
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                sx={{ p: 2 }}
+            >
+                <Card>
+                    <CardContent>
+                        <Typography>
+                            This website is a archive of my work and experiences.
+                            I made this primary to function as a resume as my old one
+                            I did not properly show my expertise.
+                        </Typography>
+                        <Link component={RouterLink} to="/website/archive/old_resume" underline='hover'>
+                            <Typography>
+                                Archive: Old resume
+                            </Typography>
+                        </Link>
+                    </CardContent>
+                </Card>
+            </Grid>
+
 
             <Grid container spacing={2}
                 direction="row"
