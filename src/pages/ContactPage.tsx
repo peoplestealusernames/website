@@ -33,12 +33,12 @@ export function ContactPage() {
                     <Typography>
                         bhogan@litigationlogisticsinc.com
                     </Typography>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/" underline='hover'>
                         <Typography>
                             Github
                         </Typography>
                     </Link>
-                    <Link component={RouterLink} to="https://www.linkedin.com/in/brett-hogan-b2052321b/" underline='hover'>
+                    <Link href="https://www.linkedin.com/in/brett-hogan-b2052321b/" underline='hover'>
                         <Typography>
                             LinkedIn
                         </Typography>

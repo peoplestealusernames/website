@@ -76,10 +76,10 @@ export function DBPage() {
                         For example A puts a listen on RGB.
                         It recives a put request with the current state and any changes after.
                     </Typography>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/Database" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/Database" underline='hover'>
                         GIT: Database
                     </Link>
-                    <Link component={RouterLink} to="https://www.npmjs.com/package/tenk-database" underline='hover'>
+                    <Link href="https://www.npmjs.com/package/tenk-database" underline='hover'>
                         NPM: tenk-database
                     </Link>
                 </CardContent>
@@ -95,17 +95,17 @@ export function DBPage() {
                         It then signals to a arduino using a custom serializer to change the PWM on pins.
                         In turn switching transistors a certain % on or off.
                     </Typography>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/TCPRGB" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/TCPRGB" underline='hover'>
                         <Typography>
                             GIT: Node:RGB
                         </Typography>
                     </Link>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/ArduinoRGB" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/ArduinoRGB" underline='hover'>
                         <Typography>
                             GIT: Ardunio:RGB
                         </Typography>
                     </Link>
-                    <Link component={RouterLink} to="website/projects/RGB" underline='hover'>
+                    <Link href="website/projects/RGB" underline='hover'>
                         <Typography>
                             Project: RGB
                         </Typography>
@@ -124,7 +124,7 @@ export function DBPage() {
                         This was a proof of concept for future derivatives of the smart home project.
                         Currently it functions as a sun dial, clock, and calander.
                     </Typography>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/Unity-Wall-Display" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/Unity-Wall-Display" underline='hover'>
                         GIT: Wall-Display
                     </Link>
                 </CardContent>
@@ -141,7 +141,7 @@ export function DBPage() {
                         Currently it only functions as a toggle for puting the display into sleep mode and RGB control.
                         The RGB color wheel however does work and has drag functionality.
                     </Typography>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/Connector-App" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/Connector-App" underline='hover'>
                         GIT: Phone app
                     </Link>
                 </CardContent>
@@ -157,10 +157,10 @@ export function DBPage() {
                         Nodejs had a error in the rough range of 55,000-60,000 out of 65,000 so only the first 50,000 characters are used.
                         In future I plan to reimpliment an old encryption system I wrote in lua off a spreadsheet test.
                     </Typography>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/Database/blob/master/tenk-database/ts/crypto.ts" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/Database/blob/master/tenk-database/ts/crypto.ts" underline='hover'>
                         <Typography> GIT: Custom Encryption API</Typography>
                     </Link>
-                    <Link component={RouterLink} to="https://github.com/peoplestealusernames/CC-Code/blob/master/API/EncryptionAPI.lua" underline='hover'>
+                    <Link href="https://github.com/peoplestealusernames/CC-Code/blob/master/API/EncryptionAPI.lua" underline='hover'>
                         <Typography> GIT: Old LUA code</Typography>
                     </Link>
                 </CardContent>
