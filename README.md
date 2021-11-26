@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# Material UI Resume
+This is a website I made to act as my personal resume.
+It run off react using MUI.
+This site runs off gitpages and uses react-routing.
+[website link](https://peoplestealusernames.github.io/website/)
+
+Due to a react/MUI error the public folder did not work so this is also the file storage for the websites.
+All images on the site link back to the public folder of this github.
+
+# React stuff
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -28,6 +37,11 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run deploy`
+
+Builds & pushes the server to github pages.
+github pages is auto-updating so it automaticly updates the page.
 
 ### `npm run eject`
 
