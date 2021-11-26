@@ -64,7 +64,7 @@ export function MainPage() {
                                 justifyContent: "left", alignItems: "left", textAlign: "left"
                             }}>
                                 I'm currently a freshman at MTSU studying Mechatronics Engineering.
-                                With multiple years of engineering experience.
+                                With multiple years of engineering and programming experience.
                             </Typography>
                         </CardContent>
                     </Card>
@@ -80,11 +80,12 @@ export function MainPage() {
                 <Card>
                     <CardContent>
                         <Typography>
-                            This website is a archive of my work and experiences.
-                            I made this primary to function as a resume as my old one
-                            I did not properly show my expertise.
+                            This website is both an archive of my work and experiences and
+                            a resume as my old one not properly show my expertise.
                         </Typography>
-                        <Link component={RouterLink} to="/website/archive/old_resume" underline='hover'>
+                        <Link
+                            href='https://github.com/peoplestealusernames/website/blob/master/public/Resume.pdf?raw=true'
+                            underline='hover'>
                             <Typography>
                                 Archive: Old resume
                             </Typography>
