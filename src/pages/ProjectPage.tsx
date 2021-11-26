@@ -53,6 +53,21 @@ export function ProjectPage() {
                 </Typography>
             </CardContent>
         </Card>
+
+
+
+        <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
+            <CardContent>
+                <Link component={RouterLink} to="/website/projects/CCDiscord" underline='hover'>
+                    <Typography>
+                        Discord bots in CC
+                    </Typography>
+                </Link>
+                <Typography>
+                    Running a discord bot in minecraft using Computer Craft.
+                </Typography>
+            </CardContent>
+        </Card>
     </Grid >
     )
 }

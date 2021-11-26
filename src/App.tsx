@@ -11,6 +11,7 @@ import { ProjectPage } from './pages/ProjectPage';
 import { ContactPage } from './pages/ContactPage';
 import { DBPage } from './pages/Projects/DBPage';
 import { RGBPage } from './pages/Projects/RGBPage';
+import { CCDiscordPage } from './pages/Projects/CCDiscord';
 
 //TODO click on images to enlarge them
 function App() {
@@ -35,6 +36,9 @@ function App() {
         } />
         <Route path="website/projects/RGB" element={
           <RGBPage />
+        } />
+        <Route path="website/projects/CCDiscord" element={
+          <CCDiscordPage />
         } />
       </Routes>
     </BrowserRouter>
