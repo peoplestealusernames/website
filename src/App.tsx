@@ -13,6 +13,7 @@ import { DBPage } from './pages/Projects/DBPage';
 import { RGBPage } from './pages/Projects/RGBPage';
 import { CCDiscordPage } from './pages/Projects/CCDiscord';
 import TestTSX from './pages/Projects/Test';
+import { VEXArmPage } from './pages/Projects/VEXArm';
 
 //TODO click on images to enlarge them
 function App() {
@@ -43,6 +44,9 @@ function App() {
         } />
         <Route path="website/test" element={
           <TestTSX />
+        } />
+        <Route path="website/projects/VEXRobotArm" element={
+          <VEXArmPage />
         } />
       </Routes>
     </BrowserRouter>

@@ -18,6 +18,18 @@ export function ShowCaseTSX() {
         >
             <Card sx={{ p: 1, m: 1, maxWidth: 250 }}>
                 <CardContent>
+                    <Link component={RouterLink} to="/website/projects/VEXRobotArm" underline='hover'>
+                        <Typography>
+                            VEX Robotic Arm
+                        </Typography>
+                    </Link>
+                    <Typography>
+                        A high school VEX robotic project, in which I made a robotic arm.
+                    </Typography>
+                </CardContent>
+            </Card>
+            <Card sx={{ p: 1, m: 1, maxWidth: 250 }}>
+                <CardContent>
                     <Link component={RouterLink} to="/website/projects/RGB" underline='hover'>
                         <Typography>
                             RGB
@@ -56,3 +68,4 @@ export function ShowCaseTSX() {
         </Grid >
     )
 }
+//TODO: add images
