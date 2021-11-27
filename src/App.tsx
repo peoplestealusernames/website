@@ -12,6 +12,7 @@ import { ContactPage } from './pages/ContactPage';
 import { DBPage } from './pages/Projects/DBPage';
 import { RGBPage } from './pages/Projects/RGBPage';
 import { CCDiscordPage } from './pages/Projects/CCDiscord';
+import TestTSX from './pages/Projects/Test';
 
 //TODO click on images to enlarge them
 function App() {
@@ -39,6 +40,9 @@ function App() {
         } />
         <Route path="website/projects/CCDiscord" element={
           <CCDiscordPage />
+        } />
+        <Route path="website/test" element={
+          <TestTSX />
         } />
       </Routes>
     </BrowserRouter>
