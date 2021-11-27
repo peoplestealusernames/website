@@ -33,7 +33,7 @@ export function RGBPage() {
             margin="auto"
             sm={10}
         >
-            <Card sx={{ m: 1, p: 1, maxWidth: 250, textAlign: "left" }}>
+            <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
                         General electrical
@@ -50,7 +50,7 @@ export function RGBPage() {
                     </Typography>
                 </CardContent>
             </Card>
-            <Card sx={{ m: 1, p: 1, maxWidth: 250, textAlign: "left" }}>
+            <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
                         Learning Arduino
@@ -63,7 +63,7 @@ export function RGBPage() {
                     </Typography>
                 </CardContent>
             </Card>
-            <Card sx={{ m: 1, p: 1, maxWidth: 250, textAlign: "left" }}>
+            <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
                         Soldering
