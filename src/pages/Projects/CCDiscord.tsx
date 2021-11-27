@@ -27,7 +27,7 @@ export function CCDiscordPage() {
                 </Typography>
                 <Link href="https://github.com/peoplestealusernames/Computer-Craft-and-discord/" underline='hover'>
                     <Typography>
-                        LinkedIn
+                        GIT: Computer Craft and discord
                     </Typography>
                 </Link>
             </CardContent>
