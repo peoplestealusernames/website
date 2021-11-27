@@ -81,7 +81,7 @@ export function MainPage() {
                 <Grid container spacing={3}
                     direction="row"
                     justifyContent="center"
-                    alignItems="center"
+                    alignItems="top"
                     margin="auto"
                     sm={10}
                     sx={{
