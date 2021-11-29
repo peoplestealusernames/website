@@ -29,6 +29,8 @@ const Skills = [
     { name: "Aerospace Engineering" },
     { name: "Cordinating" },
     { name: "Hard working" },
+    { name: "React" },
+    { name: "MUI" },
 ]
 
 export function ExperiencePage() {
