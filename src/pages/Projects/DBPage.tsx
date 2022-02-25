@@ -1,8 +1,6 @@
 import { Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
-
 export function DBPage() {
     return (<Grid container
         spacing={1}
@@ -57,7 +55,7 @@ export function DBPage() {
                     <CardMedia sx={{ maxHeight: 300 }}
                         component="img"
                         title="PIC"
-                        src={Photos + "/Projects/DB/Whole.jpg?raw=true"}
+                        src={process.env.PUBLIC_URL + "/Photos/Projects/DB/Whole.jpg"}
                         alt="RGB+Screen+APP"
                     />
                 </CardContent>

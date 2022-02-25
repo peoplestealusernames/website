@@ -1,8 +1,6 @@
 import { Box, Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
-
 export function ContactPage() {
     return (<Grid container spacing={2}
         direction="column"
@@ -61,8 +59,8 @@ export function ContactPage() {
                 <CardMedia sx={{ maxWidth: 250, maxHeight: 250 }}
                     component="img"
                     title="PIC"
-                    src={Photos + "/website.png?raw=true"}
-                    alt="RGB+Screen+APP"
+                    src={process.env.PUBLIC_URL + "/Photos/website.png"}
+                    alt="QR Code"
                 />
             </CardContent>
         </Card>

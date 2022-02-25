@@ -1,17 +1,6 @@
 import { Box, Card, CardContent, CardMedia, Grid, Typography, Link } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
-const BegImage = [
-    {
-        img: 'https://github.com/peoplestealusernames/website/blob/master/public/Photos/Begin/scratch.png?raw=true',
-        title: 'scratch',
-    },
-    {
-        img: 'https://github.com/peoplestealusernames/website/blob/master/public/Photos/Begin/legoRobotic.png?raw=true',
-        title: 'LEGORobotic',
-    },
-]
-
 export function MainPage() {
     return (
         <div className="MainPage">
@@ -40,7 +29,7 @@ export function MainPage() {
                         <CardContent>
                             <CardMedia
                                 component="img"
-                                src={"https://github.com/peoplestealusernames/website/blob/master/public/Photos/Head.jpg?raw=true"}
+                                src={process.env.PUBLIC_URL + "/Photos/Head.jpg"}
                                 alt="Head"
                             />
                         </CardContent>
@@ -174,7 +163,7 @@ export function MainPage() {
                         So I linked my old resume below for a short version, but this site details examples of my experties.
                     </Typography>
                     <Link
-                        href='https://github.com/peoplestealusernames/website/blob/master/public/Resume.pdf?raw=true'
+                        href='https://github.com/peoplestealusernames/website/blob/master/public/Resume.pdf'
                         underline='hover'>
                         <Typography>
                             Archive: Old resume

@@ -1,7 +1,5 @@
 import { Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
-
 export function VEXArmPage() {
     return (<Grid container
         spacing={1}
@@ -43,7 +41,7 @@ export function VEXArmPage() {
                     <CardMedia sx={{ maxHeight: 300 }}
                         component="img"
                         title="RobotArm"
-                        src={Photos + "/Projects/RobotArm/RobotArmFull.jpg?raw=true"}
+                        src={process.env.PUBLIC_URL + "/Photos/Projects/RobotArm/RobotArmFull.jpg"}
                         alt="Full Robotic Arm"
                     />
                 </CardContent>
