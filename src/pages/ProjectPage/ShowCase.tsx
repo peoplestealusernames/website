@@ -1,8 +1,6 @@
 import { Card, CardContent, Grid, Link, Typography, Box } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
-
 export function ShowCaseTSX() {
     return (
         <Grid container spacing={3}

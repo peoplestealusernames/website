@@ -3,8 +3,6 @@ import { Link as RouterLink } from "react-router-dom";
 import { MiscScriptsTSX } from "./MiscScripts";
 import { ShowCaseTSX } from "./ShowCase";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
-
 //TODO: add alot of cad projects from ied and poe 
 export function ProjectPage() {
     return (

@@ -1,7 +1,5 @@
 import { Card, CardContent, CardMedia, Grid, Link, Typography } from "@mui/material";
 
-const Photos = "https://github.com/peoplestealusernames/website/blob/master/public/Photos"
-
 export function CCDiscordPage() {
     return (<Grid container
         spacing={1}
