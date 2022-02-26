@@ -47,9 +47,7 @@ export function DBPage() {
         >
             <Card sx={{ m: 1, p: 1, maxWidth: 500 }}>
                 <CardContent>
-                    <Typography sx={{
-                        p: 1, fontSize: 30,
-                    }}>
+                    <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
                         Full setup
                     </Typography>
                     <CardMedia sx={{ maxHeight: 300 }}
@@ -60,7 +58,7 @@ export function DBPage() {
                     />
                 </CardContent>
             </Card>
-            <Card sx={{ m: 1, p: 1, maxWidth: 250, textAlign: "left" }}>
+            <Card sx={{ m: 1, p: 1, maxWidth: 300, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
                         Database
