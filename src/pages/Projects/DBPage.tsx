@@ -75,10 +75,14 @@ export function DBPage() {
                         It recives a put request with the current state and any changes after.
                     </Typography>
                     <Link href="https://github.com/peoplestealusernames/Database" underline='hover'>
-                        GIT: Database
+                        <Typography>
+                            GIT: Database
+                        </Typography>
                     </Link>
                     <Link href="https://www.npmjs.com/package/tenk-database" underline='hover'>
-                        NPM: tenk-database
+                        <Typography>
+                            NPM: tenk-database
+                        </Typography>
                     </Link>
                 </CardContent>
             </Card>
