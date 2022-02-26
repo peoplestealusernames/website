@@ -22,7 +22,7 @@ export function MiscScriptsTSX() {
                         </Typography>
                     </Link>
                     <Typography>
-                        Running a discord bot in minecraft using Computer Craft.
+                        Running a discord bot in Minecraft using Computer Craft.
                     </Typography>
                 </CardContent>
             </Card>
