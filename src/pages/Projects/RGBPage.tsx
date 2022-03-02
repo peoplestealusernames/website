@@ -1,6 +1,4 @@
-import { Card, CardContent, Grid, Typography } from "@mui/material";
-
-const Photos = "https:/ / github.com / peoplestealusernames / website / blob / master / public / Photos"
+import { Card, CardContent, Grid, Link, Typography } from "@mui/material";
 
 export function RGBPage() {
     return (<Grid container
@@ -18,11 +16,10 @@ export function RGBPage() {
                     p: 1, fontSize: 40,
                     justifyContent: "center", alignItems: "center", textAlign: "center"
                 }}>
-                    RGB, Ardunio, and simulation vs reality
+                    IOT Controlled RGB
                 </Typography>
                 <Typography sx={{ p: .5 }}>
-                    Trying to get the RGB lights to work with an Ardunio was my first time leaving a sim or software.
-                    I quickly learned just how little I learn a lot from it.
+                    Using the IOT to connect RGB lights to the internet through 3 diffrent methods.
                 </Typography>
             </CardContent>
         </Card>
@@ -36,45 +33,89 @@ export function RGBPage() {
             <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
-                        General electrical
+                        The Hardware
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        I was compelely clueless at electrical and thought that everything would work like software.
-                        That was a very wrong assumption I got the wrong transistors, resistors, and had no pins.
-                        I effectivly had expensive desk orniments that could not be used.
-                        I also had to get a multimeter because I did not think i would need one.
+                        The Ardunio was a nano so the only non pin IO I had was serial.
+                        So the code on the Arduino read serial to control the lights.
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        I learned that hardware more than anything runs on Murphy's law.
-                        I learned about Ohms law proper, wiring, and connection making.
+                        The RGB lights are standard over the counter 12V RGBs.
+                        The Ardunio cannot provide enough power however,
+                        so its original power supply was modified to be used as a power supply.
+                    </Typography>
+                    <Typography sx={{ m: 1 }}>
+                        The power is regulated by 3 transistors controlled by the Arudino.
                     </Typography>
                 </CardContent>
             </Card>
             <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
-                        Learning Arduino
+                        The Arduino Code
+                    </Typography>
+                    <Grid sx={{ m: 1 }}>
+                        <Typography>
+                            Ardunio however has no native way of doing this so I made a packet system.
+                        </Typography>
+                        <Typography>
+                            A packet is split by a '|' and an example would be "|r=255|".
+                        </Typography>
+                        <Typography>
+                            After spliting it, the code reads the first char which should be r, g or b.
+                        </Typography>
+                        <Typography>
+                            Then convert the rest into a number and define it as r, g or b.
+                        </Typography>
+                        <Typography>
+                            Update the pins and done.
+                        </Typography>
+                    </Grid>
+                    <Link href="https://github.com/peoplestealusernames/ArduinoRGB" underline='hover'>
+                        <Typography>
+                            GIT: Ardunio Code
+                        </Typography>
+                    </Link>
+                </CardContent>
+            </Card>
+            <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
+                <CardContent>
+                    <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
+                        Computer Code V3
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        Learning Arduino was something I passed off as the eaisest part.
-                        Although Arduino coding is easy debug was not what I was expecting.
-                        I think I tried just about every form of software debug until I bought a multimeter.
-                        In hindsight the issues were very easy to spot but I thought I could tough it out like software.
+                        Version 3 is currently a WIP but is going to use the same snapshot system from the current database system.
+                        Only diffrence being the current system uses TCP sockets the new one will use WSS.
                     </Typography>
                 </CardContent>
             </Card>
             <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
-                        Soldering
+                        Computer Code V2
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        I never even heard of this until a friend pointed it out to me.
-                        I would like to say I'm decent at it now, however I will admit to causing plenty of mending and burning in the proccess.
-                        I made a few rookie mistakes like pin connector to make a connection rather than just using the pin.
-                        Very bad and weak solder on power supplies.
-                        Connecting pins together on the Ardunio.
-                        All of which have been fix but learning it was a fun challenge.
+                        Version 2 used the old TCP database system that is slowly being replaced by the WSS and HTTPS system.
+                    </Typography>
+                    <Typography sx={{ m: 1 }}>
+                        It used the snapshot and listen system from the database to listen for changes on RGB values.
+                        This was done from things like a website and a phone app. {/*TODO:ADD */}
+                    </Typography>
+                    <Link href="https://github.com/peoplestealusernames/TCPRGB/tree/6aaa3bb210e886996156a366b99659f1bbff4f68" underline='hover'>
+                        <Typography>
+                            GIT: Node:RGB
+                        </Typography>
+                    </Link>
+                </CardContent>
+            </Card>
+            <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
+                <CardContent>
+                    <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
+                        Computer Code V1
+                    </Typography>
+                    <Typography sx={{ m: 1 }}>
+                        Version 1 I lost the code for but it used Googles Firebase instead of my custom database to control it.
+                        It used a similar snapshot system to listen for changes.
                     </Typography>
                 </CardContent>
             </Card>
