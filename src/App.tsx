@@ -18,34 +18,34 @@ import { VEXArmPage } from './pages/Projects/VEXArm';
 //TODO click on images to enlarge them
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Navigation />
       <Routes>
-        <Route path="website/" element={
+        <Route path="" element={
           <MainPage />
         } />
-        <Route path="website/contact" element={
+        <Route path="contact" element={
           <ContactPage />
         } />
-        <Route path="website/projects" element={
+        <Route path="projects" element={
           <ProjectPage />
         } />
-        <Route path="website/skills" element={
+        <Route path="skills" element={
           <ExperiencePage />
         } />
-        <Route path="website/projects/db" element={
+        <Route path="projects/db" element={
           <DBPage />
         } />
-        <Route path="website/projects/RGB" element={
+        <Route path="projects/RGB" element={
           <RGBPage />
         } />
-        <Route path="website/projects/CCDiscord" element={
+        <Route path="projects/CCDiscord" element={
           <CCDiscordPage />
         } />
-        <Route path="website/test" element={
+        <Route path="test" element={
           <TestTSX />
         } />
-        <Route path="website/projects/VEXRobotArm" element={
+        <Route path="projects/VEXRobotArm" element={
           <VEXArmPage />
         } />
       </Routes>

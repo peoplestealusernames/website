@@ -16,7 +16,7 @@ export function MiscScriptsTSX() {
         >
             <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
                 <CardContent>
-                    <Link component={RouterLink} to="/website/projects/CCDiscord" underline='hover'>
+                    <Link component={RouterLink} to="/projects/CCDiscord" underline='hover'>
                         <Typography>
                             Discord bots in CC
                         </Typography>

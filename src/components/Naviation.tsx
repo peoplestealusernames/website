@@ -2,10 +2,10 @@ import { Tab, Tabs, Card, CardContent } from "@mui/material"
 import { Link } from "react-router-dom"
 
 const items = [
-    { path: '/website/', label: 'Home' },
-    { path: '/website/skills', label: 'Skills' },
-    { path: '/website/projects', label: 'Projects' },
-    { path: '/website/contact', label: 'Contact' },
+    { path: '/', label: 'Home' },
+    { path: '/skills', label: 'Skills' },
+    { path: '/projects', label: 'Projects' },
+    { path: '/contact', label: 'Contact' },
 ]
 
 export function Navigation() {

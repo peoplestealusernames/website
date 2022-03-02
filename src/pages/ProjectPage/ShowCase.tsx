@@ -16,44 +16,44 @@ export function ShowCaseTSX() {
         >
             <Card sx={{ p: 1, m: 1, maxWidth: 250 }}>
                 <CardContent>
-                    <Link component={RouterLink} to="/website/projects/VEXRobotArm" underline='hover'>
+                    <Link component={RouterLink} to="/projects/VEXRobotArm" underline='hover'>
                         <Typography>
                             VEX Robotic Arm
                         </Typography>
                     </Link>
                     <Typography>
-                        A high school VEX robotic project, in which I made a robotic arm.
+                        A high school VEX robotic project.
                     </Typography>
                 </CardContent>
             </Card>
             <Card sx={{ p: 1, m: 1, maxWidth: 250 }}>
                 <CardContent>
-                    <Link component={RouterLink} to="/website/projects/RGB" underline='hover'>
+                    <Link component={RouterLink} to="/projects/RGB" underline='hover'>
                         <Typography>
-                            RGB
+                            RGB Arduino
                         </Typography>
                     </Link>
                     <Typography>
-                        A mini story about learning electrical from scratch.
-                        While connecting a RGB strip to the internet.
+                        Connecting a Arduino to the internet as a RGB light controller.
                     </Typography>
                 </CardContent>
             </Card>
             <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
                 <CardContent>
-                    <Link component={RouterLink} to="/website/projects/db" underline='hover'>
+                    <Link component={RouterLink} to="/projects/db" underline='hover'>
                         <Typography>
                             Homebrew database
                         </Typography>
                     </Link>
                     <Typography>
-                        A selfmade database system using TCP sockets
+                        A selfmade database system.
                     </Typography>
                 </CardContent>
             </Card>
+            {/*
             <Card sx={{ p: 1, m: 1, maxWidth: 220 }}>
                 <CardContent>
-                    <Link component={RouterLink} to="/website/projects/psudo" underline='hover'>
+                    <Link component={RouterLink} to="/projects/psudo" underline='hover'>
                         <Typography>
                             Psudo project
                         </Typography>
@@ -63,6 +63,7 @@ export function ShowCaseTSX() {
                     </Typography>
                 </CardContent>
             </Card>
+        */}
         </Grid >
     )
 }
