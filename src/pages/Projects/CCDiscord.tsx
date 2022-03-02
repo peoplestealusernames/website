@@ -18,16 +18,22 @@ export function CCDiscordPage() {
                 }}>
                     Discord bots running off Computer Craft
                 </Typography>
-                <Typography sx={{ p: .5 }}>
-                    This project was one of my first attempts working with any from of webprotocal.
-                    It was also my first time working with OAuth and Discord.
-                    Unlike other solution I saw this does it all in ComputerCraft.
-                </Typography>
-                <Link href="https://github.com/peoplestealusernames/Computer-Craft-and-discord/" underline='hover'>
+                <Grid sx={{ p: .5 }}>
                     <Typography>
-                        GIT: Computer Craft and discord
+                        Computer Craft is a Minecraft mod that acts as an ingame LUA terminal.
                     </Typography>
-                </Link>
+                    <Typography>
+                        This project took that and turned it into a discord bot.
+                    </Typography>
+                    <Typography>
+                        This was made as a notification system for when I was not ingame. And was also planned to controll automated tasks.
+                    </Typography>
+                    <Link href="https://github.com/peoplestealusernames/Computer-Craft-and-discord/" underline='hover'>
+                        <Typography>
+                            GIT: Computer Craft and discord
+                        </Typography>
+                    </Link>
+                </Grid>
             </CardContent>
         </Card>
         <Grid container sx={{ p: 2 }} spacing={3}
@@ -40,17 +46,15 @@ export function CCDiscordPage() {
             <Card sx={{ m: 1, p: 1, maxWidth: 400, textAlign: "left" }}>
                 <CardContent>
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
-                        The Basics
+                        The Front
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        In all its a realativly short and pretty basic code.
-                        All it does is monitor a discord chat and exec anything posted in chat.
+                        When ran it goes into a predetermined discord and makes a new channel.
+                        It then monitors that chat and runs anything posted in chat and post the results.
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        But the oringals looked very ugly and this was my terminal into minecraft.
-                        So I spent too much of the time working on doing things like
-                        having it make its own chat and
-                        formating on the msg.
+                        Computercraft also has IO with most things in game so it could be modified to control them remotely.
+                        It could also read sensor data to notify me in the event of emergency.
                     </Typography>
                 </CardContent>
             </Card>
@@ -60,10 +64,9 @@ export function CCDiscordPage() {
                         Behind The Scenes
                     </Typography>
                     <Typography sx={{ m: 1 }}>
-                        Truth be told however I found out Computer Craft had websockets
-                        but not very good websocket support.
+                        Computer Craft had websockets, but not very good support for them.
                         I had to make a custom heart beat system and find unique ways to send
-                        messages to discords standards.
+                        messages to discord's and OAUTH's standards.
                     </Typography>
                 </CardContent>
             </Card>
