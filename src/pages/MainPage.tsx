@@ -29,12 +29,12 @@ export function MainPage() {
                         <CardContent>
                             <CardMedia
                                 component="img"
-                                src={process.env.PUBLIC_URL + "/Photos/Head.jpg"}
+                                src={"https://media-exp1.licdn.com/dms/image/C5603AQF5Uq7sCMbd7A/profile-displayphoto-shrink_200_200/0/1630103682477?e=1651708800&v=beta&t=AznYZIs0IPnWvUVtwgemsGho-ePZy9TYKLG_HJDppGg"}
                                 alt="Head"
                             />
                         </CardContent>
                     </Card>
-                    <Card sx={{ maxWidth: 345 }}>
+                    <Card sx={{ maxWidth: 345, height: 353 }}>
                         <CardContent>
                             <Typography sx={{
                                 p: 1, fontSize: 35,
@@ -53,124 +53,120 @@ export function MainPage() {
                                 justifyContent: "left", alignItems: "left", textAlign: "left"
                             }}>
                                 I'm a programming and engineering enthusiast,
-                                currently enrolled at MTSU as a mechatonics major.
-                                With 6 years of engineering, CAD, and programming knowledge.
+                                enrolled at MTSU as a mechatonics major.
+                            </Typography>
+                            <Typography sx={{
+                                p: 1,
+                                justifyContent: "left", alignItems: "left", textAlign: "left"
+                            }}>
+                                I have 5 years of engineering knowledge and 6 of programming experience.
+                                I also have 2 years of CAD experience.
+                            </Typography>
+                            <Typography sx={{
+                                p: 1,
+                                justifyContent: "left", alignItems: "left", textAlign: "left"
+                            }}>
                             </Typography>
                         </CardContent>
                     </Card>
                 </Box>
             </Grid>
 
-            <Grid container spacing={0}
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-                sx={{ p: 2 }}
-            >
-                <Grid container spacing={3}
-                    direction="row"
-                    justifyContent="center"
-                    alignItems="top"
-                    margin="auto"
-                    sm={10}
-                    sx={{
-                        p: 2,
-                    }}
-                >
-                    <Card sx={{ m: 1, maxWidth: 500 }}>
-                        <CardContent>
-                            <Typography sx={{
-                                fontSize: 25,
-                                justifyContent: "center", alignItems: "center", textAlign: "center"
-                            }}>
-                                In school
-                            </Typography>
-                            <Typography sx={{ p: 0.5, fontSize: 20 }}>
-                                6 credits of engineering
-                            </Typography>
-                            <Typography>• Middle school intro class (Semester long)</Typography>
-                            <Typography>• IED (Intro to engineering design)</Typography>
-                            <Typography>• POE (Principles of engineering)</Typography>
-                            <Typography>• Civil (Civil engineering class )</Typography>
-                            <Typography>• EDD (Engineering deisgn and development: Senior capstone)</Typography>
-                            <Typography>• AERO (Aerospace engineering)</Typography>
-                            <Typography>• Engineering fundimentals (This year at MTSU)</Typography>
-                            <Typography sx={{ p: 0.5, fontSize: 20 }}>
-                                Other special classes
-                            </Typography>
-                            <Typography>• Lego robotics</Typography>
-                            <Typography>• Honors Physics</Typography>
-                            <Typography>• Honors Chemistry</Typography>
-                            <Typography>• Honors Pre-Calc</Typography>
-                            <Typography>-</Typography>
-                            <Typography>
-                                My favorite of these classes has to be AERO for how fun learning about space flight was.
-                                A runner up would be POE with the many VEX robotics projects that I loved and thrived with.
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                    <Card sx={{ m: 1, maxWidth: 500 }}>
-                        <CardContent>
-                            <Typography sx={{
-                                fontSize: 25,
-                                justifyContent: "center", alignItems: "center", textAlign: "center"
-                            }}>
-                                Out of school
-                            </Typography>
-                            <Typography sx={{ p: 0.5, fontSize: 20 }}>
-                                6 years of programming experience
-                            </Typography>
-                            <Typography>
-                                I starting writing very simple lua scripts for a game named GMOD.
-                                Now I'm writing apps in C# and using Nodejs/Typescript to run servers.
-                                Such as the server your reading this off of, it was hand made using material UI.
-                            </Typography>
-                            <Typography sx={{ p: 0.5, fontSize: 20 }}>
-                                2 years of IT and networking experience
-                            </Typography>
-                            <Typography>
-                                I have been in IT and computer/network setup for 2 years.
-                                I setup warrooms of computers and did their networking to have a protected network.
-                                I also ran the IT and printer support for those warrooms.
-                                I also recently started working with servers, nats, and p2p.
-                            </Typography>
-                            <Typography sx={{ p: 0.5, fontSize: 20 }}>
-                                1 years of electrical
-                            </Typography>
-                            <Typography>
-                                I've been working on mutiple project involving custom wiring and microcontrollers.
-                            </Typography>
-                            <Typography>
-                            </Typography>
-                            <Typography></Typography>
-                        </CardContent>
-                    </Card>
-                </Grid>
-            </Grid>
-
-
-
-
-
             <Card sx={{ m: 4 }}>
                 <CardContent>
                     <Typography>
                         This website is both an archive of my work and experiences and
-                        a resume.
+                        a digital resume. But is also a work in progress.
                     </Typography>
                     <Typography>
                         I belive in showing experties so I think demoing what I've done is better than saying I could.
-                        So I linked my old resume below for a short version, but this site details examples of my experties.
+                        But I do still need a paper resume and that is linked below.
                     </Typography>
                     <Link
                         href='https://github.com/peoplestealusernames/website/blob/master/public/Resume.pdf'
                         underline='hover'>
                         <Typography>
-                            Archive: Old resume
+                            Resume
                         </Typography>
                     </Link>
                 </CardContent>
             </Card>
+
+            <Card sx={{ m: 4 }}>
+                <CardContent>
+                    <Typography sx={{
+                        fontSize: 25,
+                        justifyContent: "center", alignItems: "center", textAlign: "center"
+                    }}>
+                        Knowledge and skills
+                    </Typography>
+                </CardContent>
+            </Card>
+
+            <Grid container spacing={3}
+                direction="row"
+                justifyContent="center"
+                alignItems="top"
+                margin="auto"
+                sm={10}
+                sx={{
+                    p: 0,
+                }}
+            >
+                <Card sx={{ m: 1, maxWidth: 500 }}>
+                    <CardContent>
+                        <Typography sx={{
+                            fontSize: 25,
+                            justifyContent: "center", alignItems: "center", textAlign: "center"
+                        }}>
+                            In school
+                        </Typography>
+                        <Typography sx={{ p: 0.5, fontSize: 20 }}>
+                            6.5 credits of engineering
+                        </Typography>
+                        <Typography>• Middle school intro class (Semester long)</Typography>
+                        <Typography>• IED (Intro to engineering design)</Typography>
+                        <Typography>• POE (Principles of engineering)</Typography>
+                        <Typography>• Civil (Civil engineering class)</Typography>
+                        <Typography>• EDD (Engineering deisgn and development: Senior capstone)</Typography>
+                        <Typography>• AERO (Aerospace engineering)</Typography>
+                        <Typography>• Engineering fundimentals (Enginnering intro class at MTSU)</Typography>
+                        <Typography sx={{ p: 0.5, fontSize: 20 }}>
+                            Other special classes
+                        </Typography>
+                        <Typography>• Lego robotics</Typography>
+                        <Typography>• Honors Physics</Typography>
+                        <Typography>• Honors Chemistry</Typography>
+                        <Typography>• Honors Pre-Calc</Typography>
+                    </CardContent>
+                </Card>
+                <Card sx={{ m: 1, maxWidth: 500 }}>
+                    <CardContent>
+                        <Typography sx={{
+                            fontSize: 25,
+                            justifyContent: "center", alignItems: "center", textAlign: "center"
+                        }}>
+                            Out of school
+                        </Typography>
+                        <Typography sx={{ p: 0.5, fontSize: 20 }}>
+                            6 years of programming experience
+                        </Typography>
+                        <Typography>
+                            I starting writing very simple scripts for video games.
+                            But slowly worked my way up to programming microcontrollers, writing C# apps and using Nodejs/Typescript to run servers.
+                            Such as the server your reading this off of, it was hand made using material UI.
+                        </Typography>
+                        <Typography sx={{ p: 0.5, fontSize: 20 }}>
+                            2 years of IT and networking experience
+                        </Typography>
+                        <Typography>
+                            I have been in IT and computer/network setup for 2 years.
+                            I also setup warrooms of computers and did their networking to have a protected network.
+                            And have worked with NATs, P2P servies, and server networking.
+                        </Typography>
+                    </CardContent>
+                </Card>
+            </Grid>
         </div >
     )
 }
