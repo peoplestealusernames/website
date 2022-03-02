@@ -19,6 +19,12 @@ export function DBPage() {
                 }}>
                     Homebrew database
                 </Typography>
+                <Typography sx={{
+                    p: 1, fontSize: 25,
+                    justifyContent: "center", alignItems: "center", textAlign: "center"
+                }}>
+                    WIP: Revamp in progress old infomation listed!
+                </Typography>
                 <Typography sx={{ p: .5 }}>
                     The homebrew database is a project I've been working on to function as a form of custom smart home system.
                     It's currently in a template stage as I lack the physical components to make this possible.
@@ -50,7 +56,7 @@ export function DBPage() {
                     <Typography sx={{ p: 1, fontSize: 30, textAlign: "center" }}>
                         Full setup
                     </Typography>
-                    <CardMedia sx={{ maxHeight: 300 }}
+                    <CardMedia sx={{ maxHeight: 300, imageOrientation: 'from-image' }}
                         component="img"
                         title="PIC"
                         src={process.env.PUBLIC_URL + "/Photos/Projects/DB/Whole.jpg"}
@@ -105,7 +111,7 @@ export function DBPage() {
                             GIT: Ardunio:RGB
                         </Typography>
                     </Link>
-                    <Link href="website/projects/RGB" underline='hover'>
+                    <Link component={RouterLink} to="/projects/RGB" underline='hover'>
                         <Typography>
                             Project: RGB
                         </Typography>
