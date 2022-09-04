@@ -29,7 +29,7 @@ export function MainPage() {
                         <CardContent>
                             <CardMedia
                                 component="img"
-                                src={"https://media-exp1.licdn.com/dms/image/C5603AQF5Uq7sCMbd7A/profile-displayphoto-shrink_200_200/0/1630103682477?e=1651708800&v=beta&t=AznYZIs0IPnWvUVtwgemsGho-ePZy9TYKLG_HJDppGg"}
+                                src={"https://media-exp1.licdn.com/dms/image/C4D03AQH5HHtDp3nmTA/profile-displayphoto-shrink_200_200/0/1646249063872?e=1651708800&v=beta&t=1LoPk34v-YesBI-0TfoZEaB_r29js5Sg1Qp7LXDusYo"}
                                 alt="Head"
                             />
                         </CardContent>
