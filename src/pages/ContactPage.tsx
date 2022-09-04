@@ -26,10 +26,13 @@ export function ContactPage() {
             <Card sx={{ maxWidth: 500 }}>
                 <CardContent>
                     <Typography>
-                        (931)-922-6045
+                        Phone: (931)-922-6045
                     </Typography>
                     <Typography>
-                        bhogan@litigationlogisticsinc.com
+                        Email: bretthoganpr@gmail.com
+                    </Typography>
+                    <Typography>
+                        Other contacts
                     </Typography>
                     <Link href="https://github.com/peoplestealusernames/" underline='hover'>
                         <Typography>
@@ -41,6 +44,11 @@ export function ContactPage() {
                             LinkedIn
                         </Typography>
                     </Link>
+                    <Link href="https://app.joinhandshake.com/stu/users/34498660" underline='hover'>
+                        <Typography>
+                            Hand Shake
+                        </Typography>
+                    </Link>
                 </CardContent>
             </Card>
             <Card sx={{ maxWidth: 345 }}>
@@ -49,7 +57,10 @@ export function ContactPage() {
                         Contact me!
                     </Typography>
                     <Typography>
-                        Feel free to reachout at anytime with any questions, comments, or conserns.
+                        Feel free to reachout at anytime with any questions, or comments!
+                    </Typography>
+                    <Typography>
+                        I always try to be reachable and respond quickly.
                     </Typography>
                 </CardContent>
             </Card>
